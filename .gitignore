@@ -31,8 +31,8 @@ migrate_working_dir/
 .packages
 .pub-cache/
 .pub/
-/build/
-!/build/web/
+/build/*
+!/build/web
 
 # Symbolication related
 app.*.symbols
