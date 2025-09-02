@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter pub upgrade:*)",
+      "Bash(flutter clean:*)",
+      "Bash(flutter pub:*)",
+      "Bash(find:*)",
+      "Bash(flutter build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

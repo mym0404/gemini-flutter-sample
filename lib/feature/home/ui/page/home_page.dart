@@ -150,25 +150,10 @@ class HomePage extends HookWidget {
                   key: ValueKey(index),
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    if (isLastItem)
-                      GeminiResponseTypeView(
-                        key: generateViewKey.value,
-                        builder: (context, child, response, loading) {
-                          doOnLayout(() {
-                            scrollToEnd();
-                          });
-                          return ChatItem(
-                            item: chats.value[index]
-                                .copyWith(content: response ?? ''),
-                            onReset: reset,
-                          );
-                        },
-                      )
-                    else
-                      ChatItem(
-                        item: chats.value[index],
-                        onReset: reset,
-                      ),
+                    ChatItem(
+                      item: chats.value[index],
+                      onReset: reset,
+                    ),
                     if (isLastItem && isGenerating.value)
                       HookBuilder(
                         builder: (context) {
