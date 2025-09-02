@@ -1,7 +1,6 @@
 # Flutter/Dart
 .dart_tool/
 .packages
-build/
 *.iml
 *.ipr
 *.iws
